@@ -1,12 +1,22 @@
 {
   "name": "tria-onboarding",
   "version": "0.1.0",
+  "description": "The onboarding demo created for Tria",
   "private": true,
+  "author": {
+    "name": "Karan Wasabi",
+    "email": "karan@karanwasabi.com",
+    "url": "https://karanwasabi.com"
+  },
   "scripts": {
+    "preinstall": "node -e \"if (!(process.env.npm_config_user_agent || '').startsWith('pnpm/9')) throw new Error('This project requires pnpm version 9. Please install it to proceed.')\"",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
+  },
+  "engines": {
+    "node": "20.x"
   },
   "dependencies": {
     "react": "^18",
