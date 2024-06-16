@@ -12,6 +12,7 @@ const config: Config = {
       // To calculate clamp, set Viewport Min 240px and Max 448px
       // Min Size is 75% of the desired size which is set as Max Size
       */
+      '14': 'clamp(0.656rem, 0.404rem + 1.683vw, 0.875rem)',
       '22': 'clamp(1.031rem, 0.635rem + 2.644vw, 1.375rem)',
     },
     extend: {
