@@ -7,7 +7,17 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    fontSize: {
+      /*
+      // To calculate clamp, set Viewport Min 240px and Max 448px
+      // Min Size is 75% of the desired size which is set as Max Size
+      */
+      '22': 'clamp(1.031rem, 0.635rem + 2.644vw, 1.375rem)',
+    },
     extend: {
+      backgroundImage: {
+        't-black-gradient': 'linear-gradient(0deg, #101010 7.05%, rgba(16, 16, 16, 0) 44.44%)',
+      },
       borderRadius: {
         '20': '20px',
       },
@@ -27,6 +37,10 @@ const config: Config = {
         't-light-4': '#FAFAFA0A' /* 4% */,
         't-white-80': '#FFFFFFCC' /* 80% */,
         't-white-10': '#FFFFFF1A' /* 10% */,
+      },
+      spacing: {
+        '112': '28rem' /* 448px */,
+        '210': '52.5rem' /* 840px */,
       },
     },
   },
