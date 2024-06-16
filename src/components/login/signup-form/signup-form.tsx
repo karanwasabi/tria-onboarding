@@ -4,7 +4,7 @@ import Image from 'next/image';
 const SignupForm: React.FC = () => {
   return (
     <>
-      <div className="flex w-full grow flex-col items-center justify-end">
+      <div className="flex w-full grow flex-col items-center justify-end px-4">
         <div className="flex w-full flex-col gap-3 rounded-2xl bg-t-light-4 p-4">
           <h2 className="pb-2 text-t-light-70">Create your Tria name</h2>
           <div className="flex w-full flex-wrap gap-3">

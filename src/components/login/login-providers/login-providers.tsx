@@ -4,7 +4,7 @@ import Button from '@/components/ui/button';
 const LoginProviders: React.FC = () => {
   return (
     <>
-      <div className="flex w-full grow flex-col items-center justify-end">
+      <div className="flex w-full grow flex-col items-center justify-end px-4">
         <div className="flex w-full flex-col gap-3 rounded-2xl bg-t-light-4 p-4">
           <Link href={`/signup`}>
             <Button variant="purple" icon="google">
