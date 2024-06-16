@@ -9,11 +9,15 @@ interface IButton {
   variant: 'purple' | 'plain' | 'outline';
   icon?: 'none' | 'google' | 'x' | 'phonemail' | 'metamask' | 'walletconnect';
   size?: 'auto' | 'full';
+  centered?: boolean;
   children?: ReactNode;
 }
 
 const Button = forwardRef<HTMLButtonElement, IButton>(
-  ({ children, onClick, isSubmit = false, disabled = false, variant, icon = 'none', size = 'full' }, ref) => {
+  (
+    { children, onClick, isSubmit = false, disabled = false, variant, icon = 'none', centered = false, size = 'full' },
+    ref
+  ) => {
     const inputProps: any = {};
     if (disabled) {
       inputProps.disabled = true;
@@ -66,7 +70,18 @@ const Button = forwardRef<HTMLButtonElement, IButton>(
           <button
             ref={ref}
             type={isSubmit ? 'submit' : 'button'}
-            className="text-16 relative z-40 flex w-full items-center justify-start gap-3 rounded-2xl px-3 py-1.5 font-semibold text-t-light"
+            className={clsx(
+              `text-16 relative z-40 flex w-full items-center gap-3 rounded-2xl px-3 py-1.5 font-semibold text-t-light`,
+
+              // variant - outline
+              variant === 'outline' && `text-t-white-80`,
+
+              // centered - true or false
+              centered ? `justify-center` : `justify-start`,
+
+              // no icon padding
+              icon === 'none' && `py-3`
+            )}
             {...inputProps}
           >
             {icon !== 'none' && (

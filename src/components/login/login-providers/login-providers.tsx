@@ -24,12 +24,16 @@ const LoginProviders: React.FC = () => {
             </div>
           </div>
           <div className="flex w-full items-center justify-center gap-3">
-            <Button variant="outline" icon="metamask">
-              Metamask
-            </Button>
-            <Button variant="outline" icon="walletconnect">
-              WalletConnect
-            </Button>
+            <div className="w-1/2">
+              <Button variant="outline" icon="metamask" centered={true}>
+                Metamask
+              </Button>
+            </div>
+            <div className="w-1/2">
+              <Button variant="outline" icon="walletconnect" centered={true}>
+                WalletConnect
+              </Button>
+            </div>
           </div>
         </div>
       </div>

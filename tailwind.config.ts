@@ -43,12 +43,14 @@ const config: Config = {
         't-light-8': '#FAFAFA14' /* 8% */,
         't-light-4': '#FAFAFA0A' /* 4% */,
         't-white-80': '#FFFFFFCC' /* 80% */,
+        't-white-50': '#FFFFFF80' /* 50% */,
         't-white-10': '#FFFFFF1A' /* 10% */,
       },
       scale: {
         99: '.99',
       },
       spacing: {
+        '30': '7.5rem' /* 120px */,
         '112': '28rem' /* 448px */,
         '210': '52.5rem' /* 840px */,
       },
