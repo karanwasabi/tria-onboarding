@@ -74,7 +74,7 @@ const Button = forwardRef<HTMLButtonElement, IButton>(
               `text-16 relative z-40 flex w-full items-center gap-3 rounded-2xl px-3 py-1.5 font-semibold text-t-light`,
 
               // variant - outline
-              variant === 'outline' && `text-t-white-80`,
+              variant === 'outline' && `py-3 text-t-white-80`,
 
               // centered - true or false
               centered ? `justify-center` : `justify-start`,

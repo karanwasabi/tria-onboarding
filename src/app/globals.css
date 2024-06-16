@@ -47,7 +47,7 @@
 
 @layer components {
   .t-container {
-    @apply h-210 flex w-112 flex-col items-center justify-between gap-2 rounded-20 border-2 border-solid p-4 shadow-t-container;
+    @apply h-210 flex w-112 flex-col items-center justify-between rounded-20 border-2 border-solid p-4 shadow-t-container;
     border-image-source: linear-gradient(
       122.71deg,
       rgba(128, 128, 128, 0.05) 0%,
