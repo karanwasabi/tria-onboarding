@@ -28,10 +28,12 @@ const config: Config = {
       boxShadow: {
         't-container': '0px 0px 1px 0px #80808033, 0px 2px 30px 0px #80808014, 0px 0px 15px 0px #80808008',
         't-wallet-icon': '0px 3.89px 3.89px 0px #1010100D, 0px 0px 3.89px 0px #1010101A',
+        't-button-glow': '0px 0px 14px 0px #FFFFFF40 inset',
       },
       colors: {
         't-black': '#101010',
         't-purple': '#7F43FF',
+        't-purple-border': '#9F8BFF',
         't-red': '#DA4343',
         't-gray': '#808080',
         't-light': '#FAFAFA',
@@ -43,9 +45,21 @@ const config: Config = {
         't-white-80': '#FFFFFFCC' /* 80% */,
         't-white-10': '#FFFFFF1A' /* 10% */,
       },
+      scale: {
+        99: '.99',
+      },
       spacing: {
         '112': '28rem' /* 448px */,
         '210': '52.5rem' /* 840px */,
+      },
+      transitionDuration: {
+        DEFAULT: '200ms',
+      },
+      transitionProperty: {
+        'without-border': 'background-color, color, opacity, box-shadow, transform',
+      },
+      transitionTimingFunction: {
+        DEFAULT: 'ease-in-out',
       },
     },
   },
