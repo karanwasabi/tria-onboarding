@@ -8,7 +8,7 @@ export default async function SignupLayout({ children }: IChildren) {
     <>
       <main className="flex min-h-screen items-center justify-center">
         <div className="t-container">
-          <LoginHero />
+          <LoginHero showBackButton={true} />
           {children}
           <Footer />
         </div>
