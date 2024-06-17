@@ -42,11 +42,6 @@ const Button = forwardRef<HTMLButtonElement, IButton>(
               // variant - purple
               !disabled && variant === 'purple' && `bg-t-purple-gradient`,
 
-              // variant - purple:hover
-              !disabled &&
-                variant === 'purple' &&
-                `group-hover:border-t-purple-border hover:border-solid group-hover:border-2`,
-
               // variant - plain
               !disabled && variant === 'plain' && `bg-t-light-8`,
 
@@ -64,7 +59,7 @@ const Button = forwardRef<HTMLButtonElement, IButton>(
             )}
           ></div>
           {variant === 'purple' && (
-            <div className="absolute inset-0 z-30 rounded-2xl bg-black opacity-0 transition duration-300 group-hover:opacity-40"></div>
+            <div className="absolute inset-0.5 z-30 rounded-2xl bg-black opacity-0 transition duration-300 group-hover:opacity-40"></div>
           )}
 
           <button
