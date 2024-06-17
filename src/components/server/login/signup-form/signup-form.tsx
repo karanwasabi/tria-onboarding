@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
-import Button from '@/components/ui/button';
-import InputText from '@/components/ui/input-text';
+import Button from '@/components/server/ui/button';
+import InputText from '@/components/server/ui/input-text';
 import LilHearts from '@/components/client/animations/lil-hearts/lil-hearts';
 
 const SignupForm: React.FC = () => {

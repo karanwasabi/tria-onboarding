@@ -1,5 +1,5 @@
-import LoginHero from '@/components/login/login-hero';
-import Footer from '@/components/footer';
+import LoginHero from '@/components/server/login/login-hero';
+import Footer from '@/components/server/footer';
 
 import { IChildren } from '@/models/interfaces';
 

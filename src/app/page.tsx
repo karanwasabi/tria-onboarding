@@ -1,6 +1,6 @@
-import Footer from '@/components/footer';
-import LoginHero from '@/components/login/login-hero';
-import LoginProviders from '@/components/login/login-providers';
+import Footer from '@/components/server/footer';
+import LoginHero from '@/components/server/login/login-hero';
+import LoginProviders from '@/components/server/login/login-providers';
 
 export default function Home() {
   return (

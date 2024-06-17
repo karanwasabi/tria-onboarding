@@ -14,7 +14,7 @@ const LoginHero: React.FC<ILoginHero> = ({ showBackButton = false }) => {
         </video>
         {showBackButton && (
           <Link
-            className="active:scale-99 absolute left-4 top-4 z-30 flex items-center justify-center rounded-xl p-3 opacity-40 transition hover:cursor-pointer hover:bg-t-light-8 hover:opacity-100"
+            className="absolute left-4 top-4 z-30 flex items-center justify-center rounded-xl p-3 opacity-40 transition hover:cursor-pointer hover:bg-t-light-8 hover:opacity-100 active:scale-99"
             href="/"
           >
             <Image src={`/svgs/icons/icon-back.svg`} alt="Back" width={20} height={20} />
@@ -23,7 +23,7 @@ const LoginHero: React.FC<ILoginHero> = ({ showBackButton = false }) => {
 
         <div className="relative z-40">
           <Image src={`/images/tria-logo.webp`} alt="Tria Logo" width={93} height={93} />
-          <p className="text-22 w-full pt-7 text-center font-normal text-t-light-70">
+          <p className="w-full pt-7 text-center text-22 font-normal text-t-light-70">
             Login to
             <br />
             <span className="font-bold">tria</span> Demo
