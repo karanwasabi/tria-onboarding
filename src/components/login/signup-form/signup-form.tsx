@@ -2,6 +2,7 @@ import Image from 'next/image';
 
 import Button from '@/components/ui/button';
 import InputText from '@/components/ui/input-text';
+import LilHearts from '@/components/client/animations/lil-hearts/lil-hearts';
 
 const SignupForm: React.FC = () => {
   return (
@@ -44,7 +45,9 @@ const SignupForm: React.FC = () => {
               <div className="absolute -left-40 -top-40 size-65 animate-shine-45">
                 <Image src={`/images/effects/shine-45.png`} alt="" width={260} height={260} />
               </div>
-              <Image src={`/svgs/icons/icon-emoji.svg`} alt="" width={32} height={32} />
+
+              <LilHearts />
+
               <div className="text-12 font-normal text-t-light-30">
                 Your <span className="font-semibold text-t-light-70">@tria</span> is like Gmail, for Web3. Pay, receive
                 and log-in to apps on any device, and blockchain.
