@@ -36,9 +36,12 @@ const SignupForm: React.FC = () => {
                 </Button>
               </div>
             </div>
-            <div className="flex w-full items-stretch justify-center gap-2.5 rounded-xl border border-solid border-t-light-8 p-4">
+            <div className="relative flex w-full items-stretch justify-center gap-2.5 overflow-hidden rounded-xl border border-solid border-t-light-8 p-4">
+              <div className="size-65 animate-shine-45 absolute -left-40 -top-40">
+                <Image src={`/images/effects/shine-45.png`} alt="" width={260} height={260} />
+              </div>
               <Image src={`/svgs/icons/icon-emoji.svg`} alt="" width={32} height={32} />
-              <div className="text-12 font-normal text-t-light-16">
+              <div className="text-12 font-normal text-t-light-30">
                 Your <span className="font-semibold text-t-light-70">@tria</span> is like Gmail, for Web3. Pay, receive
                 and log-in to apps on any device, and blockchain.
               </div>

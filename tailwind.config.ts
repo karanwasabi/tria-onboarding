@@ -18,6 +18,9 @@ const config: Config = {
       '22': 'clamp(1.031rem, 0.635rem + 2.644vw, 1.375rem)',
     },
     extend: {
+      animation: {
+        'shine-45': 'shine-45 3800ms infinite ease-out',
+      },
       backgroundImage: {
         't-black-gradient': 'linear-gradient(0deg, #101010 7.05%, rgba(16, 16, 16, 0) 44.44%)',
         't-purple-gradient': 'linear-gradient(111.34deg, #9F8BFF 0%, #7053FF 100%)',
@@ -45,12 +48,21 @@ const config: Config = {
         't-white-80': '#FFFFFFCC' /* 80% */,
         't-white-50': '#FFFFFF80' /* 50% */,
         't-white-10': '#FFFFFF1A' /* 10% */,
+        't-shine-10': '#D9D9D91A' /* 10% */,
+      },
+      keyframes: {
+        'shine-45': {
+          '0%': { transform: 'translate(0%, 0%)' },
+          '50%': { transform: 'translate(150%, 50%)' },
+          '100%': { transform: 'translate(300%, 100%)' },
+        },
       },
       scale: {
         99: '.99',
       },
       spacing: {
         '30': '7.5rem' /* 120px */,
+        '65': '16.25rem' /* 260px */,
         '112': '28rem' /* 448px */,
         '210': '52.5rem' /* 840px */,
       },
