@@ -16,6 +16,7 @@ const config: Config = {
       '14': 'clamp(0.656rem, 0.404rem + 1.683vw, 0.875rem)',
       '16': 'clamp(0.75rem, 0.462rem + 1.923vw, 1rem)',
       '22': 'clamp(1.031rem, 0.635rem + 2.644vw, 1.375rem)',
+      input: '16px' /* 16px fixed size for input fields to avoid zoom */,
     },
     extend: {
       animation: {
@@ -24,6 +25,10 @@ const config: Config = {
       backgroundImage: {
         't-black-gradient': 'linear-gradient(0deg, #101010 7.05%, rgba(16, 16, 16, 0) 44.44%)',
         't-purple-gradient': 'linear-gradient(111.34deg, #9F8BFF 0%, #7053FF 100%)',
+        't-half-purple-border-gradient':
+          'linear-gradient(168.47deg, rgba(54, 54, 54, 0.6) 47.33%, rgba(127, 67, 255, 0.6) 91.53%)',
+        't-half-red-border-gradient':
+          'linear-gradient(168.47deg, rgba(54, 54, 54, 0.6) 47.33%, rgba(218, 67, 67, 0.6) 91.53%)',
       },
       borderRadius: {
         '20': '20px',
@@ -35,6 +40,7 @@ const config: Config = {
       },
       colors: {
         't-black': '#101010',
+        't-dark': '#1A1A1A',
         't-purple': '#7F43FF',
         't-purple-border': '#9F8BFF',
         't-red': '#DA4343',

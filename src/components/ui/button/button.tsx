@@ -27,11 +27,17 @@ const Button = forwardRef<HTMLButtonElement, IButton>(
 
     return (
       <>
-        <div className="active:scale-99 group relative rounded-2xl transition">
+        <div
+          className={clsx(
+            `group relative rounded-2xl transition active:scale-99`,
+            // size
+            size === 'auto' ? 'w-max' : 'w-full'
+          )}
+        >
           <div
             className={clsx(
               // base styles
-              `transition-without-border absolute inset-0 z-10 rounded-2xl`,
+              `absolute inset-0 z-10 rounded-2xl transition-without-border`,
 
               // disabled
               disabled && `cursor-not-allowed`,
@@ -66,7 +72,7 @@ const Button = forwardRef<HTMLButtonElement, IButton>(
             ref={ref}
             type={isSubmit ? 'submit' : 'button'}
             className={clsx(
-              `text-16 relative z-40 flex w-full items-center gap-3 rounded-2xl px-3 py-1.5 font-semibold text-t-light`,
+              `relative z-40 flex w-full items-center gap-3 rounded-2xl px-3 py-1.5 text-16 font-semibold text-t-light`,
 
               // variant - outline
               variant === 'outline' && `py-3 text-t-white-80`,
