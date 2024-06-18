@@ -4,7 +4,7 @@
 
 @layer base {
   * {
-    @apply focus:outline-0;
+    @apply focus-within:outline-0 focus:outline-0;
   }
 
   html {
