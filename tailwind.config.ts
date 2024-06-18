@@ -57,6 +57,8 @@ const config: Config = {
       colors: {
         't-black': '#101010',
         't-dark': '#1A1A1A',
+        't-dark-highlight': '#252622',
+        't-dashboard-black': '#191919',
         't-purple': '#7F43FF',
         't-purple-border': '#9F8BFF',
         't-red': '#DA4343',
@@ -83,6 +85,7 @@ const config: Config = {
         99: '.99',
       },
       spacing: {
+        '8.5': '2.125rem' /* 34px */,
         '30': '7.5rem' /* 120px */,
         '65': '16.25rem' /* 260px */,
         '112': '28rem' /* 448px */,

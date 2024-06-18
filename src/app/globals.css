@@ -55,6 +55,10 @@
       rgba(128, 128, 128, 0.15) 100%
     );
   }
+
+  .t-dashboard-container {
+    @apply t-screen-height t-screen-width bg-t-dashboard-black flex flex-col items-center justify-between rounded-20 border border-solid border-t-light-8 pb-4;
+  }
 }
 
 @layer utilities {
