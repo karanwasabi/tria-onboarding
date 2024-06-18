@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import LilHearts from '@/components/client/animations/lil-hearts/lil-hearts';
+import LilHearts from '@/components/client/animations/lil-hearts';
 import SignupForm from '@/components/client/signup/signup-form';
 
 const SignupCard: React.FC = () => {
