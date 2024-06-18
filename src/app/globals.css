@@ -69,4 +69,12 @@
   .t-screen-width {
     width: min(calc(100vw - 2rem), 28rem);
   }
+
+  .t-clickable {
+    @apply cursor-pointer transition active:scale-99;
+  }
+
+  .t-clickable-with-bg {
+    @apply t-clickable rounded-xl hover:bg-t-light-8;
+  }
 }

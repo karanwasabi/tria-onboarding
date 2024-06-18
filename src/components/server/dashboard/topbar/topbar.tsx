@@ -11,7 +11,7 @@ const Topbar: React.FC = () => {
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            className="hover:fill-t-dark-highlight group-has-[g:hover]:fill-t-dark-highlight cursor-pointer fill-t-dark"
+            className="hover:fill-t-dark-highlight group-has-[g:hover]:fill-t-dark-highlight cursor-pointer fill-t-dark transition"
             d="M93 23.3143L75.7022 12.2654C63.9764 4.77552 48.9843 4.7133 37.1967 12.1056L17 24.7714L1 34H111L93 23.3143Z"
           />
           <path

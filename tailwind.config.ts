@@ -64,6 +64,7 @@ const config: Config = {
         't-red': '#DA4343',
         't-gray': '#808080',
         't-light': '#FAFAFA',
+        't-light-80': '#FAFAFACC' /* 80% */,
         't-light-70': '#FAFAFAB2' /* 70% */,
         't-light-30': '#FAFAFA4D' /* 30% */,
         't-light-16': '#FAFAFA29' /* 16% */,
@@ -85,6 +86,7 @@ const config: Config = {
         99: '.99',
       },
       spacing: {
+        '4.5': '1.125rem' /* 18px */,
         '8.5': '2.125rem' /* 34px */,
         '30': '7.5rem' /* 120px */,
         '65': '16.25rem' /* 260px */,
