@@ -47,12 +47,22 @@
 
 @layer components {
   .t-container {
-    @apply flex h-210 w-112 flex-col items-center justify-between rounded-20 border-2 border-solid pb-4 shadow-t-container;
+    @apply t-screen-height t-screen-width flex flex-col items-center justify-between rounded-20 border-2 border-solid pb-4 shadow-t-container;
     border-image-source: linear-gradient(
       122.71deg,
       rgba(128, 128, 128, 0.05) 0%,
       rgba(128, 128, 128, 0) 52.38%,
       rgba(128, 128, 128, 0.15) 100%
     );
+  }
+}
+
+@layer utilities {
+  .t-screen-height {
+    height: min(calc(100vh - 2rem), 52.5rem);
+  }
+
+  .t-screen-width {
+    width: min(calc(100vw - 2rem), 28rem);
   }
 }

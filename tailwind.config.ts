@@ -10,13 +10,29 @@ const config: Config = {
     fontSize: {
       /*
       // To calculate clamp, set Viewport Min 240px and Max 448px
-      // Min Size is 75% of the desired size which is set as Max Size
+      // Min Size is 60% of the desired size which is set as Max Size
       */
-      '12': 'clamp(0.563rem, 0.346rem + 1.442vw, 0.75rem)',
-      '14': 'clamp(0.656rem, 0.404rem + 1.683vw, 0.875rem)',
-      '16': 'clamp(0.75rem, 0.462rem + 1.923vw, 1rem)',
-      '22': 'clamp(1.031rem, 0.635rem + 2.644vw, 1.375rem)',
-      input: '16px' /* 16px fixed size for input fields to avoid zoom */,
+      '12': 'clamp(0.45rem, 0.104rem + 2.308vw, 0.75rem)',
+      '14': 'clamp(0.525rem, 0.121rem + 2.692vw, 0.875rem)',
+      '16': 'clamp(0.6rem, 0.138rem + 3.077vw, 1rem)',
+      '22': 'clamp(0.825rem, 0.19rem + 4.231vw, 1.375rem)',
+      button: 'clamp(0.313rem, -0.481rem + 5.288vw, 1rem)',
+    },
+    screens: {
+      xxs: '320px',
+      // => @media (min-width: 370px) { ... }
+      xs: '440px',
+      // => @media (min-width: 440px) { ... }
+      sm: '640px',
+      // => @media (min-width: 640px) { ... }
+      md: '768px',
+      // => @media (min-width: 768px) { ... }
+      lg: '1024px',
+      // => @media (min-width: 1024px) { ... }
+      xl: '1280px',
+      // => @media (min-width: 1280px) { ... }
+      '2xl': '1536px',
+      // => @media (min-width: 1536px) { ... }
     },
     extend: {
       animation: {

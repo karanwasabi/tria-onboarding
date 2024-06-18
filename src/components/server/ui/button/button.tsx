@@ -72,13 +72,13 @@ const Button = forwardRef<HTMLButtonElement, IButton>(
             ref={ref}
             type={isSubmit ? 'submit' : 'button'}
             className={clsx(
-              `relative z-40 flex w-full items-center gap-3 rounded-2xl px-3 py-1.5 text-16 font-semibold text-t-light`,
+              `text-button relative z-40 flex w-full items-center rounded-2xl py-1.5 font-semibold text-t-light`,
 
               // variant - outline
-              variant === 'outline' && `py-3 text-t-white-80`,
+              variant === 'outline' ? `xs:gap-3 xs:px-3 gap-1 px-1 py-3 text-t-white-80` : `gap-3 px-3`,
 
               // centered - true or false
-              centered ? `justify-center` : `justify-start`,
+              centered ? `justify-center text-center` : `justify-start text-left`,
 
               // no icon padding
               icon === 'none' && `py-3`
