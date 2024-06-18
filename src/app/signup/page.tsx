@@ -1,9 +1,9 @@
-import SignupForm from '@/components/server/login/signup-form';
+import SignupCard from '@/components/server/signup/signup-card';
 
 export default async function SignupPage() {
   return (
     <>
-      <SignupForm />
+      <SignupCard />
     </>
   );
 }
