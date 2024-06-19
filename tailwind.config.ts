@@ -61,6 +61,7 @@ const config: Config = {
         't-dark': '#1A1A1A',
         't-dark-highlight': '#252622',
         't-dashboard-black': '#191919',
+        't-nav-black': '#333331',
         't-purple': '#7F43FF',
         't-purple-border': '#9F8BFF',
         't-red': '#DA4343',

@@ -1,3 +1,4 @@
+import BottomNav from '@/components/client/dashboard/bottom-nav';
 import CryptoContainer from '@/components/server/dashboard/crypto-container';
 import Header from '@/components/server/dashboard/header';
 import SummaryCard from '@/components/server/dashboard/summary-card';
@@ -24,6 +25,10 @@ export default async function DashboardPage() {
 
       <div className="relative z-20 flex w-full grow flex-col items-center justify-start bg-t-dashboard-black px-4 py-5">
         <CryptoContainer />
+      </div>
+
+      <div className="relative z-20 flex w-full flex-col items-center justify-center bg-t-dashboard-black px-4 py-2">
+        <BottomNav />
       </div>
     </>
   );
