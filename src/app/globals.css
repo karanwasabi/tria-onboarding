@@ -57,7 +57,7 @@
   }
 
   .t-dashboard-container {
-    @apply t-screen-height t-screen-width bg-t-dashboard-black flex flex-col items-center justify-between rounded-20 border border-solid border-t-light-8 pb-4;
+    @apply t-screen-height t-screen-width flex flex-col items-center justify-between rounded-20 border border-solid border-t-light-8 bg-t-dashboard-black pb-4;
   }
 }
 
