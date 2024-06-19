@@ -6,7 +6,7 @@ interface IButton {
   onClick?: () => void;
   isSubmit?: boolean;
   disabled?: boolean;
-  variant: 'purple' | 'plain' | 'outline';
+  variant: 'purple' | 'plain' | 'outline' | 'arrow';
   icon?: 'none' | 'google' | 'x' | 'phonemail' | 'metamask' | 'walletconnect';
   size?: 'auto' | 'full';
   centered?: boolean;
@@ -60,6 +60,12 @@ const Button = forwardRef<HTMLButtonElement, IButton>(
               // variant - outline:hover
               !disabled && variant === 'outline' && `group-hover:shadow-t-button-glow`,
 
+              // variant - arrow
+              !disabled && variant === 'arrow' && `bg-t-black-50`,
+
+              // variant - arrow:hover
+              !disabled && variant === 'arrow' && `group-hover:bg-t-purple`,
+
               // size
               size === 'auto' ? 'w-max' : 'w-full'
             )}
@@ -72,10 +78,10 @@ const Button = forwardRef<HTMLButtonElement, IButton>(
             ref={ref}
             type={isSubmit ? 'submit' : 'button'}
             className={clsx(
-              `text-button relative z-40 flex w-full items-center rounded-2xl py-1.5 font-semibold text-t-light`,
+              `relative z-40 flex w-full items-center rounded-2xl py-1.5 text-button font-semibold text-t-light`,
 
               // variant - outline
-              variant === 'outline' ? `xs:gap-3 xs:px-3 gap-1 px-1 py-3 text-t-white-80` : `gap-3 px-3`,
+              variant === 'outline' ? `gap-1 px-1 py-3 text-t-white-80 xs:gap-3 xs:px-3` : `gap-3 px-3`,
 
               // centered - true or false
               centered ? `justify-center text-center` : `justify-start text-left`,

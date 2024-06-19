@@ -16,6 +16,7 @@ const config: Config = {
       '14': 'clamp(0.525rem, 0.121rem + 2.692vw, 0.875rem)',
       '16': 'clamp(0.6rem, 0.138rem + 3.077vw, 1rem)',
       '22': 'clamp(0.825rem, 0.19rem + 4.231vw, 1.375rem)',
+      '36': 'clamp(1.35rem, 0.312rem + 6.923vw, 2.25rem)',
       button: 'clamp(0.313rem, -0.481rem + 5.288vw, 1rem)',
     },
     screens: {
@@ -45,6 +46,7 @@ const config: Config = {
           'linear-gradient(168.47deg, rgba(54, 54, 54, 0.6) 47.33%, rgba(127, 67, 255, 0.6) 91.53%)',
         't-half-red-border-gradient':
           'linear-gradient(168.47deg, rgba(54, 54, 54, 0.6) 47.33%, rgba(218, 67, 67, 0.6) 91.53%)',
+        't-summary-card': 'url("/images/dashboard/summary-bg.png")',
       },
       borderRadius: {
         '20': '20px',
@@ -63,6 +65,8 @@ const config: Config = {
         't-purple-border': '#9F8BFF',
         't-red': '#DA4343',
         't-gray': '#808080',
+        't-positive-green': '#55CC7D',
+        't-highlight-green': '#25593766' /* 40% */,
         't-light': '#FAFAFA',
         't-light-80': '#FAFAFACC' /* 80% */,
         't-light-70': '#FAFAFAB2' /* 70% */,
@@ -74,6 +78,7 @@ const config: Config = {
         't-white-50': '#FFFFFF80' /* 50% */,
         't-white-10': '#FFFFFF1A' /* 10% */,
         't-shine-10': '#D9D9D91A' /* 10% */,
+        't-black-50': '#10101080' /* 50% */,
       },
       keyframes: {
         'shine-45': {

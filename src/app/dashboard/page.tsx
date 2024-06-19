@@ -1,4 +1,5 @@
 import Header from '@/components/server/dashboard/header';
+import SummaryCard from '@/components/server/dashboard/summary-card';
 
 export default async function DashboardPage() {
   return (
@@ -8,7 +9,10 @@ export default async function DashboardPage() {
           <source src="/videos/logo-bg.mp4" type="video/mp4" />
         </video>
 
-        <Header />
+        <div className="relative z-20 flex w-full flex-col items-center justify-start px-4">
+          <Header />
+          <SummaryCard />
+        </div>
       </div>
     </>
   );

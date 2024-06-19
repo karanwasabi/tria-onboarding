@@ -3,10 +3,10 @@ import Image from 'next/image';
 const Header: React.FC = () => {
   return (
     <>
-      <div className="pl-4.5 relative z-40 flex w-full items-center justify-between pr-6 pt-7">
+      <div className="relative z-40 flex w-full items-center justify-between pb-3 pl-0.5 pr-2 pt-7">
         <div className="t-clickable-with-bg flex select-none items-center justify-start gap-2 p-1.5">
           <Image src={`/images/dashboard/avatar.png`} alt="avatar" height={28} width={28} />
-          <p className="text-t-light-80 text-16 font-semibold">thekaypo@tria</p>
+          <p className="text-16 font-semibold text-t-light-80">thekaypo@tria</p>
           <Image src={`/svgs/dashboard/arrow-down.svg`} alt="" height={16} width={16} />
         </div>
         <div className="flex items-center justify-end gap-1">
