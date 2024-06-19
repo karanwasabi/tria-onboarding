@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import { Controller, useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -29,6 +30,8 @@ const SignupForm: React.FC = () => {
 
   const [suggestions, setSuggestions] = useState<string[] | null | undefined>(null);
 
+  const router = useRouter();
+
   const onSubmit = async (data: SignupSchema) => {
     const response = await signup(data);
     if (!response.success) {
@@ -36,6 +39,7 @@ const SignupForm: React.FC = () => {
       setSuggestions(response.suggestions);
     } else {
       // Proceed with form submission
+      router.push(`/signingup`);
     }
   };
 

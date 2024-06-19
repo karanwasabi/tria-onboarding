@@ -7,7 +7,7 @@ export default async function DashboardLayout({ children }: IChildren) {
   return (
     <>
       <main className="flex min-h-screen items-center justify-center">
-        <div className="t-dashboard-container relative">
+        <div className="t-dashboard-container relative mt-4">
           <Topbar />
           {children}
           <Footer compactMode={true} />
