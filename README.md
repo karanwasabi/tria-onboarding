@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Tria Onboarding Demo
+
+This project contains the code for the onboarding demo created for [Tria](https://tria.so/) by [@KaranWasabi](https://karanwasabi.com).
+
+The project is deployed at [https://tria-onboarding.vercel.app](https://tria-onboarding.vercel.app/)
+
+It is a [Next.js](https://nextjs.org/) project.
 
 ## Getting Started
 
-First, run the development server:
+To run the project, clone it and run
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm install
+```
+
+This will install all dependencies.
+
+```bash
+pnpm prepare
+```
+
+This will connect husky hooks (pre-commit and pre-push validations).
+
+After this one time setup, use the following to run the app every time:
+
+```bash
 pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Node Version
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+This project needs Node.js version to be at least 20.
 
-## Learn More
+## Global Dependencies
 
-To learn more about Next.js, take a look at the following resources:
+You need to have `pnpm` and `next` installed globally. If you don't, run:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm i -g pnpm next
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+and then try running the dev server again.
 
-## Deploy on Vercel
+## Issues
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+For any issues, reach out to [@KaranWasabi](https://karanwasabi.com)
